@@ -28,7 +28,7 @@ class Counter extends React.Component {
     return (
       <div id="container">
         <h1>COUNTER APP</h1>
-        <h2 id="counter">{`Count: ${this.state.counter}`}</h2>
+        <h2 id="counter">{this.state.counter}</h2>
         <button onClick={this.increment} className="button increment">Increment</button>
        <button onClick={this.decrement} className="button decrement">Decrement</button>
         <button onClick={this.reset} className="button reset">Reset</button>
