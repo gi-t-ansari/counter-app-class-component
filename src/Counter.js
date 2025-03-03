@@ -30,8 +30,8 @@ class Counter extends React.Component {
         <h1>COUNTER APP</h1>
         <h2 id="counter">{this.state.counter}</h2>
         <button onClick={this.increment} className="button increment">Increment</button>
-        {this.state.counter === 0 ? <button disabled className="disabled">Decrement</button> :<button onClick={this.decrement} className="button decrement">Decrement</button>}
-        {this.state.counter === 0 ? <button disabled className="disabled">Reset</button> :<button onClick={this.reset} className="button reset">Reset</button>}
+        <button disabled className="disabled">Decrement</button> :<button onClick={this.decrement} className="button decrement">Decrement</button>
+        <button disabled className="disabled">Reset</button> :<button onClick={this.reset} className="button reset">Reset</button>
       </div>
     );
   }
